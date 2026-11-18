@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | Taste of Ethiopia</title>
+</head>
+<body>
+    <header>
+        <h1>Reserve Your Table</h1>
+        <p>We look forward to serving you!</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="about.html">About & Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Reservation Form</h2>
+        <p>Please complete the form below to request a table reservation at our restaurant.</p>
+
+        <form action="#" method="get">
+            <fieldset>
+                <legend>personal information</legend>
+
+                <p>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text"
+                           id="full name"
+                           name="full name"
+                           placeholder="enter your name"
+                           required>
+                </p>
+                <p>
+                    <label for="email address">Email Address:</label>
+                    <input type="email"
+                           id =  "email address"   
+                           name = "email"
+                           placeholder="example@email.com"
+                           required>
+                </p>
+                <p>
+                    <label for="phone no">Phone Number:</label>
+                    <input type="number"
+                           id="phone no"
+                           name = "phone number"
+                           placeholder="Enter your phone number"
+                           required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Reservation Detailes</legend>
+
+                <p>
+                    <label for="number_of_guests">Number of Guests:</label>
+                    <input type="number"
+                        id = "number_of_guests"
+                        name="guests"
+                        min = "1"
+                        max="2"
+                        value = "2"
+                        required>
+                </p>
+                        
+
+                <p>
+                    <label for="date">Reservation Date</label>
+                    <input type="date"
+                        id="date"
+                        name="date"
+                        required>
+                </p>
+                        
+                <p>
+                    <label for="time">Preferred Time:</label>
+                    <input type="time"
+                        id="time"
+                        name="time"
+                        required>
+                </p>
+                      
+                <p>
+                    <label for="occasion">Occasion:</label>
+                    <select name="occasion" id="occasion">
+                        <option value="select an occasion ">select an occasion</option>
+                        <option value="birthday">birthday</option>
+                        <option value="family gathering">family gathering</option>
+                        <option value="bussiness meeting">bussiness meeting</option>
+                        <option value="special dinner">special dinner</option>
+                        <option value="other">other</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="request">Special Request:</label>
+                    <textarea name="request" 
+                              id="request"
+                              rows="5"
+                              cols="40"
+                              placeholder="Enter any special requests here"></textarea>
+                </p>
+                       
+            </fieldset>
+            <P>
+                <input type="checkbox"
+                   id = "agreement"
+                   name="agreement"
+                   required>
+            <label for="agreement">I confirm that the information provided is correct</label>
+
+            </P>
+            
+            <button type="submit">Submit Reservation</button>
+
+            <button type="reset">Clear Form</button>
+
+
+        </form>
+
+         <h2>Reservation Information</h2>
+
+            <ul>
+                <li>Please provide accurate contact information.</li>
+                <li>Reservations are subject to confirmation.</li>
+                <li>Please arrive on time.</li>
+            </ul>
+    
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Taste of Ethiopia Restaurant.</p>
+        <a href="index.html">Back to Home</a>
+    </footer>
+    
+</body>
+</html>
